@@ -14,11 +14,11 @@ This server initially uses OpenRouter for its web search functionality but is bu
   - [Installation](#installation)
   - [Configuration](#configuration)
   - [Consumption](#consumption)
-    - [Using with Cline](#using-with-cline)
+    - [Using with Roo Code](#using-with-roo-code)
   - [Available Tools](#available-tools)
     - [search_web](#search_web)
       - [Parameters](#parameters)
-      - [Example (Conceptual Cline Usage)](#example-conceptual-cline-usage)
+      - [Example (Conceptual Roo Code Usage)](#example-conceptual-roo-code-usage)
       - [Response Format](#response-format)
   - [License](#license)
 
@@ -93,11 +93,11 @@ The server is configured using environment variables.
 
 ## Consumption
 
-This MCP server listens for requests over standard input/output (stdio) when run directly. It's designed to be integrated into tools like Cline.
+This MCP server listens for requests over standard input/output (stdio) when run directly. It's designed to be integrated into tools like Roo Code.
 
-### Using with Cline
+### Using with Roo Code
 
-To use this server with Cline, add the following configuration to your `.roo/mcp.json` file. Adjust the `args` path to point to the compiled `index.js` file within your cloned repository location.
+To use this server with Roo Code, add the following configuration to your `.roo/mcp.json` file. Adjust the `args` path to point to the compiled `index.js` file within your cloned repository location.
 
 ```json
 {
@@ -138,10 +138,10 @@ Performs a web search using the configured provider (currently OpenRouter) and r
 - `num_results` (integer, optional): The desired number of search results. Must be between 1 and 10. Defaults to 5.
 - `focus` (string, optional): Specifies the focus area for the search. Supported values: `"technical"`, `"development"`, `"general"`. Defaults to `"technical"`.
 
-#### Example (Conceptual Cline Usage)
+#### Example (Conceptual Roo Code Usage)
 
 ```typescript
-// Within a Cline agent or script
+// Within a Roo Code agent or script
 const searchResults = await useMcpTool("developer-research", "search_web", {
   query: "advanced typescript patterns",
   num_results: 3,
