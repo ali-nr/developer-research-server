@@ -19,7 +19,6 @@ import { dirname, join } from "path";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-// Check if API key is set
 if (!process.env.OPENROUTER_API_KEY) {
   console.error("Error: OPENROUTER_API_KEY environment variable is not set");
   console.error("Please set it before running this script:");
