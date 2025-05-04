@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "openrouter-search": {
+      "command": "node",
+      "args": [
+        "/Users/alirezanoori/Documents/Cline/MCP/developer-research-server/build/index.js"
+      ],
+      "env": {
+        "OPENROUTER_API_KEY": "your-openrouter-api-key",
+        "OPENROUTER_API_URL": "https://openrouter.ai/api/v1"
+      },
+      "alwaysAllow": ["search_web"],
+      "timeout": 60
+    }
+  }
+}
