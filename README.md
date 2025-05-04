@@ -2,8 +2,6 @@
 
 This repository contains a Model Context Protocol (MCP) server designed to provide structured research capabilities, primarily web search, for AI agents or other development tools. MCP enables standardized communication between a client (like an AI agent) and servers offering specialized tools.
 
-This server initially uses OpenRouter for its web search functionality but is built with an extensible architecture to easily integrate additional research providers (e.g., other search engines, databases) in the future.
-
 ## Table of Contents
 
 - [Developer Research MCP Server](#developer-research-mcp-server)
