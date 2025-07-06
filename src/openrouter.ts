@@ -44,7 +44,7 @@ export class OpenRouterClient {
       const { query, num_results = 5, focus = "technical" } = params;
 
       const requestData: OpenRouterRequest = {
-        model: "openai/gpt-3.5-turbo:online", // Using :online suffix as mentioned in docs
+        model: "openai/gpt-4o-mini:online", // Using :online suffix as mentioned in docs
         messages: [
           {
             role: "user",
